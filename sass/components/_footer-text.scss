@@ -1,0 +1,9 @@
+.join-text {
+  margin-bottom: 20px;
+  @include font(14px, 1.14);
+
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--page-bg-color);
+}

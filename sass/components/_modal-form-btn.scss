@@ -1,0 +1,17 @@
+.modal-form-btn {
+  display: inline-block;
+  padding: 10px 52px;
+  align-self: center;
+  min-width: 200px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: var(--main-accent-color);
+  color: var(--primary-text-color-light);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+}

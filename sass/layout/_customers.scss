@@ -1,0 +1,99 @@
+// .regular-customers-list {
+//   display: flex;
+//   column-gap: 30px;
+// }
+
+// .regular-customers-list__item {
+//   width: 170px;
+//   height: 92px;
+// }
+
+// .regular-customers-list__link {
+//   @extend %align;
+//   width: 100%;
+//   height: 100%;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   transition: border var(--transition-dur-and-func);
+
+//   &:hover,
+//   &:focus {
+//     border: 1px solid var(--main-accent-color);
+//   }
+// }
+
+// .regular-customers-list__icon {
+//   fill: #afb1b8;
+//   transition: fill var(--transition-dur-and-func);
+
+//   .regular-customers-list__link:hover &,
+//   .regular-customers-list__link:focus & {
+//     fill: var(--main-accent-color);
+//   }
+// }
+
+.regular-customers__title {
+  margin-bottom: 30px;
+
+  font-size: 28px;
+  line-height: 1.14;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color-dark);
+  text-align: center;
+}
+
+.regular-customers-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.regular-customers-list__item {
+  width: calc((100% - 30px) / 2);
+  height: 92px;
+}
+
+.regular-customers-list__link {
+  @extend %align;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--main-accent-color);
+  }
+}
+
+.regular-customers-list__icon {
+  fill: #afb1b8;
+  transition: fill var(--transition-dur-and-func);
+
+  .regular-customers-list__link:hover &,
+  .regular-customers-list__link:focus & {
+    fill: var(--main-accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .regular-customers-list__item {
+    width: calc((100% - 2 * 30px) / 3);
+    height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers-list__item {
+    width: calc((100% - 5 * 30px) / 6);
+    height: 92px;
+  }
+
+  .regular-customers__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}

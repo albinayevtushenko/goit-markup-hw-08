@@ -1,0 +1,151 @@
+// .advantage-theme {
+//   @extend %align;
+//   width: 270px;
+//   height: 120px;
+//   margin-bottom: 20px;
+//   column-gap: 30px;
+//   background-color: var(--secondary-bg-color-light);
+// }
+
+// .advantage-list,
+// .work-list,
+// .team-list {
+//   display: flex;
+//   column-gap: 30px;
+// }
+
+// .work-list__item {
+//   position: relative;
+// }
+
+// .work-list__overlay {
+//   @extend %align;
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 70px;
+//   color: var(--page-bg-color);
+//   text-transform: uppercase;
+//   font-weight: 700;
+//   line-height: 1.143;
+//   text-align: center;
+//   background-color: rgba(47, 48, 58, 0.8);
+// }
+
+// .list-marker {
+//   width: 270px;
+// }
+// .advantage-title {
+//   margin-bottom: 10px;
+
+//   @include font(14px, 1.14);
+//   font-weight: 700;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }
+
+// .text {
+//   color: var(--secondary-text-color-dark);
+//   line-height: 1.7;
+// }
+
+// .work {
+//   padding-top: 0;
+// }
+
+.advantage-theme {
+  @extend %align;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-bg-color-light);
+}
+
+.list-marker {
+  margin-bottom: 30px;
+}
+
+.advantage-title {
+  margin-bottom: 10px;
+
+  @include font(14px, 1.14);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text {
+  color: var(--secondary-text-color-dark);
+  line-height: 1.7;
+}
+.work {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list,
+  .work-list,
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .list-marker {
+    width: calc((100% - 30px) / 2);
+  }
+  .advantage-theme {
+    // @extend %align;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bg-color-light);
+  }
+
+  .advantage-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-list,
+  .work-list,
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .list-marker {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+  .work {
+    display: block;
+    padding-top: 0;
+  }
+  .work-list__item {
+    position: relative;
+  }
+
+  .work-list__overlay {
+    // @extend %align;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    color: var(--page-bg-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.143;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

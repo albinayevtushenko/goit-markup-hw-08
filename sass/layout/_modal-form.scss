@@ -1,0 +1,125 @@
+.modal-form-title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color var(--transition-dur-and-func);
+
+  &:focus {
+    outline: none;
+    border-color: var(--main-accent-color);
+  }
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--primary-text-color-dark);
+  transition: fill var(--transition-dur-and-func);
+
+  .modal-form-input:focus + & {
+    fill: var(--main-accent-color);
+  }
+}
+
+.modal-form-field-desk {
+  display: block;
+  margin-bottom: 4px;
+  @include font(12px, 1.2);
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color-dark);
+}
+
+.modal-form-input-wrapper {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-form-comment {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color var(--transition-dur-and-func);
+
+  &:focus {
+    outline: none;
+    border-color: var(--main-accent-color);
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-form-check-icon {
+  border-radius: 2px;
+  border: 1px solid var(--primary-text-color-dark);
+  cursor: pointer;
+  margin-right: 7px;
+
+  .modal-form-checkbox:checked + & {
+    background-color: var(--main-accent-color);
+    border-color: var(--main-accent-color);
+  }
+
+  .modal-form-checkbox:focus + & {
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
+    border-color: var(--main-accent-color);
+  }
+}
+
+.own-check-icon {
+  display: none;
+}
+
+.modal-form-checkbox:checked + .modal-form-check-icon .own-check-icon {
+  display: block;
+}
+
+.modal-form-checkbox {
+  appearance: none;
+  position: absolute;
+}
+.modal-form-check-label {
+  @extend %align !optional;
+  margin-bottom: 30px;
+}
+
+.modal-form-check-desk {
+  color: var(--secondary-text-color-dark);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+}
+
+.modal-form-check-link {
+  color: var(--main-accent-color);
+  font-family: inherit;
+  @include font(14px, 1.7);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}

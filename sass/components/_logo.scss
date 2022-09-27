@@ -1,0 +1,5 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  @include font(26px, 1.4);
+  font-weight: 700;
+}
