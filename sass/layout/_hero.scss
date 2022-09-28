@@ -31,7 +31,7 @@
   text-align: center;
   background-color: var(--primary-bg-color-dark);
   background-image: linear-gradient(to right, rgba(47 48 58 / 40%), rgba(47 48 58 / 40%)),
-    url(../images/hero-img.jpg);
+    url(../images/hero-img-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,22 +89,4 @@
     line-height: 1.4;
     text-align: center;
   }
-}
-
-.hero {
-  background-image: linear-gradient(to right, rgba(47 48 58 / 40%), rgba(47 48 58 / 40%)),
-    url('/images/hero-img-mobile@2x.jpg');
-}
-
-.hero-title {
-  margin-bottom: 30px;
-
-  color: var(--primary-text-color-light);
-  font-size: 26px;
-  line-height: 1.6;
-
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  text-align: center;
 }
