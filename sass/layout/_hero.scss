@@ -60,7 +60,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47 48 58 / 40%), rgba(47 48 58 / 40%)),
-      url(/images/hero-img-tablet.jpg);
+      url(./images/hero-img-tablet.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -74,7 +74,7 @@
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47 48 58 / 40%), rgba(47 48 58 / 40%)),
-      url(/images/hero-img-desktop.jpg);
+      url(./images/hero-img-desktop.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
