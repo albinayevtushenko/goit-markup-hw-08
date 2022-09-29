@@ -217,7 +217,8 @@
     color: var(--secondary-text-color-dark);
     font-family: inherit;
     font-style: normal;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 0.86;
     letter-spacing: 0.02em;
     font-weight: 500;
     transition: color var(--transition-dur-and-func);
@@ -239,6 +240,10 @@
     .tel:focus & {
       fill: var(--main-accent-color);
     }
+  }
+
+  .mail {
+    margin-bottom: 10px;
   }
 
   .current {
@@ -315,24 +320,14 @@
     margin-left: auto;
   }
 
-  .list .mail,
-  .list .tel {
-    display: flex;
-    padding: 32px 0;
-    align-items: center;
-
-    color: var(--secondary-text-color-dark);
-    font-family: inherit;
-    font-style: normal;
+  .mail,
+  .tel {
+    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    transition: color var(--transition-dur-and-func);
+  }
 
-    &:hover,
-    &:focus {
-      color: var(--main-accent-color);
-    }
+  .mail {
+    margin-bottom: 0;
   }
 
   .mail-icon {

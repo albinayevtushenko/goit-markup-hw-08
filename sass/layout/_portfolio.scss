@@ -44,8 +44,10 @@
 }
 
 .portfolio-content-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 100%;
   background-color: var(--primary-text-color-light);
   transition: box-shadow var(--transition-dur-and-func);
 
@@ -65,6 +67,7 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .portfolio-title {
@@ -94,7 +97,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition-dur-and-func);
 }
 
