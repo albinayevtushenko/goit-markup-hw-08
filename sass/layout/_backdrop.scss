@@ -19,8 +19,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 450px;
-  min-height: 581px;
+  min-width: 90%;
+  min-height: 609px;
   padding: 40px;
   transform: translate(-50%, -50%);
   background-color: var(--page-bg-color);
@@ -51,8 +51,16 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
+    min-height: 581px;
   }
 }
